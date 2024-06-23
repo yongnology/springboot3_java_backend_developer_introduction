@@ -9,7 +9,7 @@ public class FirstController {
 
     @GetMapping("/hi")
     public String niceToMeetYou(Model model) {
-        model.addAttribute("username", "홍팍");
+        model.addAttribute("username", "hongpark");
         return "greetings"; // greetings.mustache 파일 변환
     }
 

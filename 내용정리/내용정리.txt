@@ -70,3 +70,7 @@ model.addAttribute("username". "홍팍")
 - 상단의 헤더(header)영억에는 사이트 안내를 위한 내비게이션을 넣고
 - 하단의 푸터(footer) 영역에는 사이트 정보를 넣는다.
 - 두 영역 사이에는 사용자가 볼 핵심 내용인 콘텐트(content)를 배치
+
+2.4.1 /hi 페이지에 헤더-푸터 레이아웃 적용하기
+
+부트스트랩(https://getbootstrap.com) 활용
