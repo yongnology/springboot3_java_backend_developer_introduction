@@ -25,3 +25,25 @@
 -> MVC 패턴(Model-View-Controller Pattern)
 
 2.2 MVC 패턴을 활용해 뷰 템플릿 페이지 만들기
+
+2.2.3 모델 추가하기
+
+■ 요약
+1. 뷰 페이지 만들기
+greetings.mustache
+
+2. 컨트롤러 만들기
+FirstController.java
+
+3. 컨트롤러에서 뷰 페이지 반환하기
+return "greetings"
+
+4. 뷰 페이지에 변수 삽입하기
+{{username}}
+
+5. 컨트롤러에 모델 추가하기
+niceToMeetYou(Model model)
+
+6. 모델에서 변수 등록하기
+model.addAttribute("username". "홍팍")
+
