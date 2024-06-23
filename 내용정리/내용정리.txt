@@ -58,3 +58,4 @@ model.addAttribute("username". "홍팍")
   이때 return문에는 파일 이름만 작성.(return "greetings";).
   그러면 서버가 알아서 templates 디렉터리에 있는 해당 뷰 템플릿 페이지를 찾아 웹 브라우저로 전송.
 
+2.3.2 /bye 페이지의 실행 흐름
