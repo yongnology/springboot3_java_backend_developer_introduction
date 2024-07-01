@@ -52,4 +52,9 @@ public class ArticleController {
         // 3. 조회한 데이터를 사용자에게 보여주기 위한 뷰 페이지 만들고 반환하기
         return "articles/show";
     }
+
+    @GetMapping("/articles")
+    public String index() {
+        return "";
+    }
 }
