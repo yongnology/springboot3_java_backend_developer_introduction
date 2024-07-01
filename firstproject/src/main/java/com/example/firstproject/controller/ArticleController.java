@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Slf4j  // 로깅 기능을 위한 어노테이션 추가
@@ -34,6 +35,12 @@ public class ArticleController {
         Article saved = articleRepository.save(article);    // article 엔티티를 저장해 saved 객체에 반환
 //        System.out.println(saved.toString() );      // article이 DB에 잘 저장되는지 확인 출력
         log.info(saved.toString());
+        return "";
+    }
+
+    @GetMapping("/articles/{id}")
+    public String show(@PathVariable Long id) {
+        log.info("id = " + id);
         return "";
     }
 }
