@@ -6,6 +6,7 @@ import com.example.firstproject.repository.ArticleRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,8 +40,16 @@ public class ArticleController {
     }
 
     @GetMapping("/articles/{id}")
-    public String show(@PathVariable Long id) {
+    public String show(@PathVariable Long id, Model model) {
         log.info("id = " + id);
-        return "";
+        // 1. id를 조회해 db에서 해당 데이터 가져오기
+//        Optional<Article> articleEntity = articleRepository.findById(id);
+        Article articleEntity = articleRepository.findById(id).orElse(null);
+
+        // 2. 가져온 데이터를 모델에 등록하기
+        model.addAttribute("article", articleEntity);
+
+        // 3. 조회한 데이터를 사용자에게 보여주기 위한 뷰 페이지 만들고 반환하기
+        return "articles/show";
     }
 }
