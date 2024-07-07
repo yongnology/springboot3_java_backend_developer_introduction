@@ -312,3 +312,21 @@ JPA의 CrudRepository가 제공하는 메서드,
 7.2.3 수정 폼 만들기
 
 ============================================
+
+7.3 수정 데이터를 DB에 갱신하기
+
+■ 클라이언트와 서버 간 처리 흐름 4가지 기술
+
+● MVC(Model-View-Controller)
+: 서버 역할을 분담해 처리하는 기법
+
+● JPA(Java Persistence API)
+: 서버와 db 간 소통에 관여하는 기술
+
+● SQL(Structured Query Language)
+: DB 데이터를 관리하는 언어
+
+● HTTP(HyperText Transfer Protocol)
+: 데이터를 조고받기 위한 통신 규약
+
+============================================
