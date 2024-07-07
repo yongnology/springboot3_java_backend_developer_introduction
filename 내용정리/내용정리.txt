@@ -329,4 +329,16 @@ JPA의 CrudRepository가 제공하는 메서드,
 ● HTTP(HyperText Transfer Protocol)
 : 데이터를 조고받기 위한 통신 규약
 
+7.3.1 HTTP 메서드
+
+대표적인 메서드
+POST: 데이터 생성 요청
+GET: 데이터 조회 요청
+PATCH(PUT): 데이터 수정 요청
+DELETE: 데이터 삭제 요청
+
+=> CRUD
+
+7.3.2 더미 데이터 생성하기
+
 ============================================
